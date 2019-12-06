@@ -1,13 +1,208 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta http-equiv="refresh" content="0; url=https://fossasia.org" />
 		<title>FOSSASIA</title>
 		<meta name="description" content="The goal of this website is to showcase the work of young students who start to collaborate in the FOSS community with FOSSASIA. We want to build a site, that has little dependencies. Fonts, images and services should come as little as possible from external services. Also libraries that would need to be updated in future to newer versions should be avoided as much as possible. The website should not be needed to be maintained after the contest itself." />
 		<meta name="keywords" content="FOSSASIA" />
-		<meta name="generator" content="FOSSASIA" />	
+		<meta name="generator" content="FOSSASIA" />
+		<link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet" type="text/css">
+		<link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="assets/img/brand/logo.png" rel="icon" type="image/png">
+		<!-- Argon CSS -->
+		<link type="text/css" href="assets/css/argon.min.css" rel="stylesheet" >	
 	</head>
 	<body>
+		<header class="header-global">
+			<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+			  <div class="container">
+				<a class="navbar-brand mr-lg-5" href="index.html">
+				  <img alt="image" src="assets/img/brand/logo.png">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse" id="navbar_global">
+				  <div class="navbar-collapse-header">
+					<div class="row">
+					  <div class="col-6 collapse-brand">
+						<a href="index.html">
+						  <img alt="image" src="assets/img/brand/blue.png">
+						</a>
+					  </div>
+					  <div class="col-6 collapse-close">
+						<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+						  <span></span>
+						  <span></span>
+						</button>
+					  </div>
+					</div>
+				  </div>
+				  <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+					<li class="nav-item dropdown">
+					  <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+						<i class="ni ni-ui-04 d-lg-none"></i>
+						<span class="nav-link-inner--text">Projects</span>
+					  </a>
+					  <div class="dropdown-menu dropdown-menu-xl">
+						<div class="dropdown-menu-inner">
+						  <a href="https://susi.ai/" class="media d-flex align-items-center">
+							<div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+							  <i class="ni ni-spaceship"></i>
+							</div>
+							<div class="media-body ml-3">
+							  <h6 class="heading text-primary mb-md-1">Susi.ai</h6>
+							  <p class="description d-none d-md-inline-block mb-0">Susi AI is an intelligent Open Source assistant capable of chat and voice interaction</p>
+							</div>
+						  </a>
+						  <a href="https://github.com/fossasia/labyrinth" class="media d-flex align-items-center">
+							<div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+							  <i class="ni ni-palette"></i>
+							</div>
+							<div class="media-body ml-3">
+							  <h6 class="heading text-primary mb-md-1">Labyrinth</h6>
+							  <p class="description d-none d-md-inline-block mb-0">Labyrinth is a software which can be edited by you. This is an example in which direction we go:</p>
+							</div>
+						  </a>
+						  <a href="https://pslab.io/" class="media d-flex align-items-center">
+							<div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+							  <i class="ni ni-ui-04"></i>
+							</div>
+							<div class="media-body ml-3">
+							  <h5 class="heading text-warning mb-md-1">PSLab</h5>
+							  <p class="description d-none d-md-inline-block mb-0">PSLab is a small USB powered hardware extension for your Android phone or PC that lets you use all kind of digital instruments</p>
+							</div>
+						  </a>
+						</div>
+					  </div>
+					</li>
+				  </ul>
+				  <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+					<li class="nav-item">
+					  <a class="nav-link nav-link-icon" href="https://fossasia.org/" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
+						<i class="fa fa-facebook-square"></i>
+						<span class="nav-link-inner--text d-lg-none">Facebook</span>
+					  </a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link nav-link-icon" href="https://twitter.com/fossasia" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">
+						<i class="fa fa-twitter-square"></i>
+						<span class="nav-link-inner--text d-lg-none">Twitter</span>
+					  </a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link nav-link-icon" href="https://github.com/fossasia" target="_blank" data-toggle="tooltip" title="Check out our Github">
+						<i class="fa fa-github"></i>
+						<span class="nav-link-inner--text d-lg-none">Github</span>
+					  </a>
+					</li>
+					<li class="nav-item d-none d-lg-block ml-lg-4">
+					  <a href="https://codein.withgoogle.com/" target="_blank" class="btn btn-neutral btn-icon">
+						<span class="btn-inner--icon">
+						  <i class="ni ni-trophy mr-2"></i>
+						</span>
+						<span class="nav-link-inner--text">GCI 2019-20</span>
+					  </a>
+					</li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		  </header>
+		  <main>
+			<div class="position-relative">
+			  <section class="section section-lg section-hero section-shaped">
+				<!-- Background circles -->
+				<div class="shape shape-style-1 shape-primary">
+				  <span class="span-150"></span>
+				  <span class="span-50"></span>
+				  <span class="span-50"></span>
+				  <span class="span-75"></span>
+				  <span class="span-100"></span> 
+				  <span class="span-75"></span>
+				  <span class="span-50"></span>
+				  <span class="span-100"></span>
+				  <span class="span-50"></span>
+				  <span class="span-100"></span>
+				</div>
+				<div class="container shape-container d-flex align-items-center py-lg">
+					<div class="col px-0">
+					  <div class="row align-items-center justify-content-center">
+						<div class="col-lg-6 text-center">
+						  <img alt="image" src="assets/img/brand/logo.png" style="width: 200px;" class="img-fluid">
+						  <p class="lead text-white">Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT</p>
+						  <div class="btn-wrapper mt-5">
+							<a href="https://www.creative-tim.com/product/argon-design-system" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
+							  <span class="btn-inner--icon"><i class="ni ni-spaceship"></i></span>
+							  <span class="btn-inner--text">Fossasia</span>
+							</a>
+							<a href="https://github.com/creativetimofficial/argon-design-system" class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0" target="_blank">
+							  <span class="btn-inner--icon"><i class="fa fa-github"></i></span>
+							  <span class="btn-inner--text"><span class="text-warning">Contribute</span> on Github</span>
+							</a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</section>
+			<section class="section section-lg">
+				<div class="container">
+				  <div class="row row-grid align-items-center">
+					<div class="col-md-6 order-md-2">
+					  <img src="assets/img/theme/promo-1.png" class="img-fluid floating" alt="image">
+					</div>
+					<div class="col-md-6 order-md-1">
+					  <div class="pr-md-5">
+						<div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+						  <i class="ni ni-settings-gear-65"></i>
+						</div>
+						<h3>Awesome features</h3>
+						<p>The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
+						<ul class="list-unstyled mt-5">
+						  <li class="py-2">
+							<div class="d-flex align-items-center">
+							  <div>
+								<div class="badge badge-circle badge-success mr-3">
+								  <i class="ni ni-settings-gear-65"></i>
+								</div>
+							  </div>
+							  <div>
+								<h6 class="mb-0">Carefully crafted components</h6>
+							  </div>
+							</div>
+						  </li>
+						  <li class="py-2">
+							<div class="d-flex align-items-center">
+							  <div>
+								<div class="badge badge-circle badge-success mr-3">
+								  <i class="ni ni-html5"></i>
+								</div>
+							  </div>
+							  <div>
+								<h6 class="mb-0">Amazing page examples</h6>
+							  </div>
+							</div>
+						  </li>
+						  <li class="py-2">
+							<div class="d-flex align-items-center">
+							  <div>
+								<div class="badge badge-circle badge-success mr-3">
+								  <i class="ni ni-satisfied"></i>
+								</div>
+							  </div>
+							  <div>
+								<h6 class="mb-0">Super friendly support team</h6>
+							  </div>
+							</div>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</section>
+			</div> 
+			</div>
+		</main>
 	</body>
 </html>
