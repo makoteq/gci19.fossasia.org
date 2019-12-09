@@ -15942,7 +15942,7 @@ button.section-darker:focus
 {
     width: 2.375rem;
     height: 2.375rem;
-    padding: 0;
+    padding: 10px 0 0 0;
 }
 
 a.btn-icon-only
