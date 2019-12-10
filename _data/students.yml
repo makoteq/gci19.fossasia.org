@@ -1,26 +1,25 @@
-  # image: 
-  # (Paste the image in assets/img/students [480*480px] and add the file name here.)
-  # name: Your_Name
-  # country: Your_Country
-  # github: Your_Github_Username
-  # (Copy your username from your profile URL; https://github.com/{{ student.github }} )
-  # twitter: 
-  # (Copy your username from your profile URL; https://twitter.com/{{ student.twitter }} )
-  # facebook: 
-  # (Copy your username from your profile URL; https://www.facebook.com/{{ student.facebook }} )
-  # color: btn-warning 
-  # (Add one of your facourite colour from following.)
-  # (If you can choose the colour matched to your photo)
-  # if orange --> btn-warning
-  # if green  --> btn-success
-  # if violet --> btn-primary
-  # if white  --> btn-secondary
-  # if blue   --> btn-info
-  # if red    --> btn-danger
-  # if ash    --> btn-light
-  # if black  --> btn-dark
-  # if dark-blue --> btn-default
-
+# image:
+# (Paste the image in assets/img/students [480*480px] and add the file name here.)
+# name: Your_Name
+# country: Your_Country
+# github: Your_Github_Username
+# (Copy your username from your profile URL; https://github.com/{{ student.github }} )
+# twitter:
+# (Copy your username from your profile URL; https://twitter.com/{{ student.twitter }} )
+# facebook:
+# (Copy your username from your profile URL; https://www.facebook.com/{{ student.facebook }} )
+# color: btn-warning
+# (Add one of your facourite colour from following.)
+# (If you can choose the colour matched to your photo)
+# if orange --> btn-warning
+# if green  --> btn-success
+# if violet --> btn-primary
+# if white  --> btn-secondary
+# if blue   --> btn-info
+# if red    --> btn-danger
+# if ash    --> btn-light
+# if black  --> btn-dark
+# if dark-blue --> btn-default
 
 - image: supun_tharinda
   name: Supun Tharinda
@@ -34,4 +33,11 @@
   name: Kumuditha Karunarathna
   country: Sri Lanka
   github: kumuditha-udayanga
+  color: btn-success
+
+- image: MuhammadWasif
+  name: Muhammad Wasif
+  country: Pakistan
+  github: MuhammadWasif
+  twitter: m_wasif_
   color: btn-success
