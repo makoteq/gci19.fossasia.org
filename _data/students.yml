@@ -35,3 +35,10 @@
   country: Sri Lanka
   github: kumuditha-udayanga
   color: btn-success
+
+- image: pranav
+  name: Pranav Karthik
+  country: Canada
+  github: pranavkarthik10
+  twitter: code_pranav
+  color: btn-info
