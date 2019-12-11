@@ -1,0 +1,26 @@
+- image: Shantnu Kumar
+  name: Shantnu Kumar
+  country: India
+  github: dipu989
+  color: btn-dark
+
+- image: Mario Behling
+  name: Mario Behling
+  country: Germany
+  github: mariobehling
+  twitter: mariobehling
+  color: btn-dark
+
+- image: Hong Phuc Dang
+  name: Hong Phuc Dang
+  country: Singapore
+  github: hpdang
+  twitter: hpdang
+  facebook: hpdang
+  color: btn-dark
+
+- image: Kush Trivedi
+  name: Kush Trivedi
+  country: Indore
+  github: kushthedude
+  color: btn-dark
