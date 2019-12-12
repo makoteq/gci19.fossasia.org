@@ -33,6 +33,8 @@
   name: Kumuditha Karunarathna
   country: Sri Lanka
   github: kumuditha-udayanga
+  twitter: Kumuditha_Udaya
+  facebook: kumuthditha.karunarthna
   color: btn-success
 
 - image: MuhammadWasif
@@ -41,3 +43,11 @@
   github: MuhammadWasif
   twitter: m_wasif_
   color: btn-secondary
+
+- image: kingpin(prakhargurunani)
+  name: Prakhar Gurunani
+  country: India
+  github: prakhargurunani
+  twitter: PrakharGurunani
+  color: btn-default
+
