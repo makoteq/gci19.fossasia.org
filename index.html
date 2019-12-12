@@ -345,7 +345,14 @@
 					</div>
 				</div>
 			</section>
-		</div>
+			<section class="section section-primary">
+				<h2 class="display-3 text-center mb-5">Contributors
+					<p class="lead text-center">People who have made contributions to gci19.fossasia.org</p>
+				</h2>
+				<div class="container">
+					<div id="contributors"></div>
+				</div>
+			</section>
 		</div>
 	</main>
 	<!-- Core -->
@@ -355,6 +362,34 @@
 	<script src="./assets/vendor/headroom/headroom.min.js"></script>
 	<!-- Argon JS -->
 	<script src="./assets/js/argon.js?v=1.1.0"></script>
+	<!-- Mustache -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
+	<!--External JS file-->
+	<script src="./assets/js/pages/index.js"></script>
+	<!-- Template to render -->
+	<script type="text/html" id="contributors-template">
+		{% raw %}
+		<div class="row">
+			{{#contributors}}
+			<div class="col-md-4 mb-3">
+				<div class="card shadow">
+					<div class="card-body">
+						<h5>{{name}}</h5>
+						<div class="mb-2">
+							<span class="badge badge-pill badge-success">Additions {{additions}} </span>
+							<span class="badge badge-pill badge-danger">Deletions {{deletions}}</span>
+						</div>
+						<p class="mb-2">{{commits}} commits</p>
+						<a href="mailto:{{email}}" class="btn btn-twitter btn-icon-only rounded-circle btn-icon-rounded">
+							<i class="fa fa-envelope"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			{{/contributors}}
+		</div>
+		{% endraw %}
+	</script>
 </body>
 
 </html>
