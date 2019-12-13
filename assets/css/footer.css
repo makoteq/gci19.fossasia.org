@@ -13,3 +13,6 @@
 .icon_social:hover{
     background-color: blueviolet;
 }
+html {
+    scroll-behavior: smooth;
+  }
