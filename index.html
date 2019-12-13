@@ -14,6 +14,8 @@
 	<link type="text/css" href="./assets/css/argon.min.css" rel="stylesheet">
 	<!-- footer CSS -->
 	<link type="text/css" href="./assets/css/footer.css" rel="stylesheet">
+	<!-- Scroll CSS -->
+	<link type="text/css" href="./assets/css/scrollbutton.css" rel="stylesheet">
 	<!-- Favicon -->
 	<link href="./assets/img/brand/logo.png" rel="icon" type="image/png">
 	<!-- Fonts -->
@@ -23,9 +25,11 @@
 	<link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Argon CSS -->
 	<link type="text/css" href="./assets/css/argon.css?v=1.1.0" rel="stylesheet">
+
 </head>
 
 <body>
+		<a id="button"></a>
 	<header id="start" class="header-global">
 		<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
 			<div class="container">
@@ -387,7 +391,6 @@
 				<i class="fa fa-linkedin"></i>
 			  </a>
 			</div>
-			<p class="footer_text font-weight-bold" ><a style="margin-top:10px; text-decoration: underline;color: rgb(152, 106, 196);" href="#top">Back to top</a></p>
 			</div>
 		  </footer>
 	</main>
@@ -426,6 +429,23 @@
 		</div>
 		{% endraw %}
 	</script>
+	<script>
+	var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+</script>
 </body>
 
 </html>
