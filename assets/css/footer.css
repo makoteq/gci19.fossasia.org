@@ -5,6 +5,7 @@
 .icon_social{
     font-size: 2em;
     transition: 0.3s linear;
+    max-width:20%;
 }
 .footer_text{
     font-size: 1em;
