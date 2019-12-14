@@ -353,6 +353,20 @@
 					<div id="contributors"></div>
 				</div>
 			</section>
+			<section class="section section-primary">
+				<h2 class="display-3 text-center mb-5">Latest Contributions
+					<p class="lead text-center">Latest commits on our GitLab repository</p>
+				</h2>
+				<div class="container">
+					<div id="latest">
+					</div>
+					<a href="https://www.creative-tim.com/product/argon-design-system"
+										class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0 text-center">
+										<span class="btn-inner--icon"><i class="fa fa-eye"></i></span>
+										<span class="btn-inner--text">View More</span>
+									</a>
+				</div>
+			</section>
 		</div>
 	</main>
 	<!-- Core -->
@@ -387,6 +401,28 @@
 				</div>
 			</div>
 			{{/contributors}}
+		</div>
+		{% endraw %}
+	</script>
+	<script type="text/html" id="contribution-activity">
+		{% raw %}
+		<div class="row">
+			{{#latest}}
+			<div class="col-md-12 mb-3">
+				<div class="card shadow">
+					<div class="card-body">
+						<table width=100% >
+						<td width=50% text-align =left>
+						<h5>{{title}}</h5>
+						<p>!{{iid}} · Opened by <a href={{author.web_url}}>{{author.name}}</a></p>
+						</td>
+						<td width=50% align=right> 
+						<p ><a href={{web_url}}>View</a></p></td>
+						</table>
+					</div>
+				</div>
+			</div>
+			{{/latest}}
 		</div>
 		{% endraw %}
 	</script>
