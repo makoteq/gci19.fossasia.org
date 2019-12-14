@@ -3,7 +3,7 @@
 
 <html>
 
-<head>
+<head> 
 	<meta charset="utf-8" />
 	<title>FOSSASIA</title>
 	<meta name="description"
@@ -12,6 +12,10 @@
 	<meta name="generator" content="FOSSASIA" />
 	<!-- Argon CSS -->
 	<link type="text/css" href="./assets/css/argon.min.css" rel="stylesheet">
+	<!-- footer CSS -->
+	<link type="text/css" href="./assets/css/footer.css" rel="stylesheet">
+	<!-- Scroll CSS -->
+	<link type="text/css" href="./assets/css/scrollbutton.css" rel="stylesheet">
 	<!-- Favicon -->
 	<link href="./assets/img/brand/logo.png" rel="icon" type="image/png">
 	<!-- Fonts -->
@@ -21,10 +25,12 @@
 	<link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Argon CSS -->
 	<link type="text/css" href="./assets/css/argon.css?v=1.1.0" rel="stylesheet">
+
 </head>
 
 <body>
-	<header class="header-global">
+		<a id="button"></a>
+	<header id="start" class="header-global">
 		<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
 			<div class="container">
 				<a class="navbar-brand mr-lg-5" href="index.html">
@@ -354,6 +360,39 @@
 				</div>
 			</section>
 		</div>
+		<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+			<div class="container text-center">
+			  <img src="./assets/img/logo-light.jpg" alt="fossasia icon" style="width:100px" class="rounded">
+			  
+			  <p class="footer_text font-weight-bold" style="color: rgb(152, 106, 196);">GCI2019 &copy;</p>
+			  <div style="margin:0 auto;" class="w-75 text-center row container">
+			  <a class="icon_social col-sm nav-link nav-link-icon" href="https://www.facebook.com/fossasia/" target="_blank" data-toggle="tooltip" title="Check out our Facebook">
+				<i class="fa fa-facebook-square"></i>
+			  </a>
+			  <a class="icon_social col-sm nav-link nav-link-icon" href="https://twitter.com/fossasia" target="_blank" data-toggle="tooltip" title="Check out our Twitter">
+				<i class="fa fa-twitter-square"></i>
+			  </a>
+			  <a class="icon_social col-sm nav-link nav-link-icon" href="https://github.com/fossasia" target="_blank" data-toggle="tooltip" title="Check out our Github">
+				<i class="fa fa-github"></i>
+			  </a>
+			  <a class="icon_social col-sm nav-link nav-link-icon" href="https://www.youtube.com/fossasiaorg" target="_blank" data-toggle="tooltip" title="Check out our Youtube">
+				<i class="fa fa-youtube-square"></i>
+			  </a>
+			  <a class="icon_social col-sm nav-link nav-link-icon" href="https://www.instagram.com/explore/tags/fossasia/" target="_blank" data-toggle="tooltip" title="Check out our Instagram">
+				<i class="fa fa-instagram"></i>
+			  </a>
+			  <a class="icon_social col-sm nav-link nav-link-icon" href="https://www.flickr.com/photos/fossasia" target="_blank" data-toggle="tooltip" title="Check out our Flickr">
+				<i class="fa fa-flickr"></i>
+			  </a>
+			  <a class="icon_social col-sm nav-link nav-link-icon" href="https://www.weibo.com/fossasia?is_all=1" target="_blank" data-toggle="tooltip" title="Check out our Weibo">
+				<i class="fa fa-weibo"></i>
+			  </a>
+			  <a class="icon_social col-sm nav-link nav-link-icon" href=https://www.linkedin.com/groups/3762811 target="_blank" data-toggle="tooltip" title="Check out our Linkedin">
+				<i class="fa fa-linkedin"></i>
+			  </a>
+			</div>
+			</div>
+		  </footer>
 	</main>
 	<!-- Core -->
 	<script src="./assets/vendor/jquery/jquery.min.js"></script>
@@ -390,6 +429,23 @@
 		</div>
 		{% endraw %}
 	</script>
+	<script>
+	var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+</script>
 </body>
 
 </html>
