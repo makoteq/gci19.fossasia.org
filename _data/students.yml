@@ -37,6 +37,13 @@
   facebook: kumuthditha.karunarthna
   color: btn-success
 
+- image: pranav
+  name: Pranav Karthik
+  country: Canada
+  github: pranavkarthik10
+  twitter: code_pranav
+  color: btn-info
+  
 - image: MuhammadWasif
   name: Muhammad Wasif
   country: Pakistan
