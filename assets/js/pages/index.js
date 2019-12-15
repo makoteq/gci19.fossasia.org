@@ -24,13 +24,11 @@ $(function () {
                 if(e > 5){
                     return!1;
                 }
-
                 else
             {
                 d[e]=item;
                 e++;
             }
-            
             }
             );
             // render contributors with mustache
