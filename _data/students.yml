@@ -20,7 +20,12 @@
 # if ash    --> btn-light
 # if black  --> btn-dark
 # if dark-blue --> btn-default
-
+- image: maciejkotowski
+  name: Maciej Kotowski
+  country: Poland
+  github: makoteq
+  color: btn-danger
+  
 - image: supun_tharinda
   name: Supun Tharinda
   country: Sri Lanka
@@ -77,3 +82,6 @@
   github: mhmdbhsk
   facebook: mhmdbhsk
   color: btn-success
+
+
+
