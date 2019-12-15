@@ -50,4 +50,10 @@
   github: prakhargurunani
   twitter: PrakharGurunani
   color: btn-default
+  
+- image: chamod
+  name: Chamod perera
+  country: Sri lanka
+  github: chamodperera
+  color: btn-warning
 
