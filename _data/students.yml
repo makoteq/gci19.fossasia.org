@@ -43,13 +43,13 @@
   github: pranavkarthik10
   twitter: code_pranav
   color: btn-info
-  
+
 - image: MuhammadWasif
   name: Muhammad Wasif
   country: Pakistan
   github: MuhammadWasif
   twitter: m_wasif_
-  color: btn-secondary
+  color: btn-default
 
 - image: kingpin(prakhargurunani)
   name: Prakhar Gurunani
@@ -57,7 +57,7 @@
   github: prakhargurunani
   twitter: PrakharGurunani
   color: btn-default
-  
+
 - image: chamod
   name: Chamod perera
   country: Sri lanka
