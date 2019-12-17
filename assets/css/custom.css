@@ -21,3 +21,7 @@
 .section-shaped .shape-danger :nth-child(5) {
     background: rgba(255,255,255, 0.20);
 }
+
+.btn-icon-only {
+    padding: 10px;
+}
