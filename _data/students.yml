@@ -77,7 +77,13 @@
   github: mhmdbhsk
   facebook: mhmdbhsk
   color: btn-success
-
+  
+- image: maciejkotowski
+  name: Maciej Kotowski
+  country: Poland
+  github: makoteq
+  color: btn-danger
+  
 - image: NishithP
   name: Nishith P
   country: India
