@@ -22,6 +22,10 @@
     background: rgba(255,255,255, 0.20);
 }
 
+.btn-icon-only {
+    padding: 10px;
+}
+
 .blog-card .card-body {
     padding: 24px 0;
 }
@@ -29,3 +33,4 @@
 .blog-card .card-header-image img{
     width: 100%;
 }
+
