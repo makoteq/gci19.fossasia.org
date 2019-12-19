@@ -97,5 +97,12 @@
   country: India
   github: aryanguls
   facebook: Aryan Gulati
-  color: btn-success  
+  color: btn-success 
 
+
+- image: noor
+  name: Noor Bzour
+  country: Jordan
+  github: NourBzour
+  facebook: noor.bzour.370
+  color: btn-dark
