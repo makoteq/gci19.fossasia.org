@@ -10,12 +10,13 @@
 		content="The goal of this website is to showcase the work of young students who start to collaborate in the FOSS community with FOSSASIA. We want to build a site, that has little dependencies. Fonts, images and services should come as little as possible from external services. Also libraries that would need to be updated in future to newer versions should be avoided as much as possible. The website should not be needed to be maintained after the contest itself." />
 	<meta name="keywords" content="FOSSASIA" />
 	<meta name="generator" content="FOSSASIA" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Argon CSS -->
 	<link type="text/css" href="./assets/css/argon.min.css" rel="stylesheet">
 	<!-- footer CSS -->
-	<link type="text/css" href="./assets/css/footer.css" rel="stylesheet">
+	<link type="text/css" href="./assets/css/footer.min.css" rel="stylesheet">
 	<!-- Scroll CSS -->
-	<link type="text/css" href="./assets/css/scrollbutton.css" rel="stylesheet">
+	<link type="text/css" href="./assets/css/scrollbutton.min.css" rel="stylesheet">
 	<!-- Favicon -->
 	<link href="./assets/img/brand/logo.png" rel="icon" type="image/png">
 	<!-- Fonts -->
@@ -24,7 +25,9 @@
 	<link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
 	<link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Argon CSS -->
-	<link type="text/css" href="./assets/css/argon.css?v=1.1.0" rel="stylesheet">
+	<link type="text/css" href="./assets/css/argon.min.css" rel="stylesheet">
+	<!--Custom CSS Rules-->
+	<link type="text/css" href="assets/css/custom.min.css" rel="stylesheet">
 
 </head>
 
@@ -67,18 +70,17 @@
 								<div class="dropdown-menu-inner">
 									<a href="https://susi.ai/" class="media d-flex align-items-center">
 										<div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
-											<i class="ni ni-spaceship"></i>
+											<img src="/assets/img/projects/susiai.png" width="48" height="48"></img>
 										</div>
 										<div class="media-body ml-3">
-											<h6 class="heading text-primary mb-md-1">SUSI.AI
-											<a href="" class="btn btn-white btn-icon">GitHub</a></h6>
+											<h6 class="heading text-primary mb-md-1">SUSI.AI</h6>
 											<p class="description d-none d-md-inline-block mb-0">Susi.AI is an intelligent Open Source
 												assistant capable of chat and voice interaction.</p>
 										</div>
 									</a>
 									<a href="https://github.com/fossasia/labyrinth" class="media d-flex align-items-center">
 										<div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-											<i class="ni ni-palette"></i>
+											<img src="/assets/img/projects/labyrinth.png" width="32" height="32"></img>
 										</div>
 										<div class="media-body ml-3">
 											<h6 class="heading text-primary mb-md-1">Labyrinth</h6>
@@ -88,13 +90,16 @@
 									</a>
 									<a href="https://pslab.io/" class="media d-flex align-items-center">
 										<div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
-											<i class="ni ni-ui-04"></i>
+											<img src="/assets/img/projects/pslab.png" width="32" height="32"></img>
 										</div>
 										<div class="media-body ml-3">
 											<h5 class="heading text-warning mb-md-1">PSLab</h5>
 											<p class="description d-none d-md-inline-block mb-0">PSLab is a small USB powered hardware
 												extension for your Android phone or PC that lets you use all kind of digital instruments</p>
 										</div>
+									</a>
+									<a href="https://github.com/fossasia" class="media d-flex align-items-center">
+										<span class="btn-inner--text">View more on <span class="text-warning">Github</span></span>
 									</a>
 								</div>
 							</div>
@@ -159,10 +164,10 @@
 								<p class="lead text-white">Bringing together an inspiring community across borders and ages to form a
 									better future with Open Technologies and ICT</p>
 								<div class="btn-wrapper mt-5">
-									<a href="https://www.fossasia.org"
+									<a href="https://fossasia.org"
 										class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
 										<span class="btn-inner--icon"><i class="ni ni-spaceship"></i></span>
-										<span class="btn-inner--text">Learn More</span>
+										<span class="btn-inner--text">FOSSASIA</span>
 									</a>
 									<a href="https://github.com/fossasia"
 										class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0" target="_blank">
@@ -187,14 +192,11 @@
 						{% for student in site.data.students %}
 						<div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
 							<div class="px-4">
+								<div class="image">
 								<img src="./assets/img/students/{{ student.image }}.jpeg"
 									class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
-								<div class="pt-4 text-center">
-									<h5 class="title">
-										<span class="d-block mb-1">{{ student.name }}</span>
-										<small class="h6 text-muted">{{ student.country }}</small>
-									</h5>
-									<div class="mt-3">
+									<div class="cardbtn">
+									<div class="mt-3 text-center">
 										{% if student.github %}
 										<a href="https://github.com/{{ student.github }}"
 											class="btn {{ student.color }} btn-icon-only rounded-circle"
@@ -215,6 +217,13 @@
 										</a>
 										{% endif %}
 									</div>
+									</div>
+									</div>
+								<div class="pt-4 text-center">
+									<h5 class="title">
+										<span class="d-block mb-1">{{ student.name }}</span>
+										<small class="h6 text-muted">{{ student.country }}</small>
+									</h5>
 								</div>
 							</div>
 						</div>
@@ -261,19 +270,18 @@
                                 <a href="#pablo">
                                     <!--Add Your project image here-->
                                     <img class="img img-fluid rounded shadow img-full img-raised"
-                                         src="https://dummyimage.com/320x200/c2c2c2/000000.jpg">
+                                         src="assets/img/blogs/my_contribution_in_open_source.jpeg">
                                 </a>
                             </div>
                         </div>
                         <div class="card-body">
                             <h4 class="heading">
-                                <a href="#pablo">Project 2</a>
+                                <a href="#pablo">Blog - My Contribution in Open Source</a>
                             </h4>
-                            <p><strong>Student name</strong></p>
+                            <p><strong>Chamod perera</strong></p>
                             <p class="card-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                <a href="#pablo"> Read More </a>
+                                Hey there I 'm Chamod perera from Sri Lanka.I'm a pacticipant of this years' Google code-in.So today I'm going to introduce Google code-in and share my experience in open source.,
+                                <a href="https://fossasia.home.blog/2019/12/16/my-contibution-in-open-source/"> Read More </a>
                             </p>
                         </div>
                     </div>
@@ -315,16 +323,13 @@
 					</div>
 					<div class="row justify-content-center">
 						{% for mentor in site.data.mentors %}
-						<div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+						<div class="col-md-6 col-lg-3 mb-5 mb-lg-0" style="margin-top: 16px;">
 							<div class="px-4">
+								<div class="image">
 								<img src="./assets/img/mentors/{{ mentor.image }}.jpeg"
 									 class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
-								<div class="pt-4 text-center">
-									<h5 class="title">
-										<span class="d-block mb-1">{{ mentor.name }}</span>
-										<small class="h6 text-muted">{{ mentor.country }}</small>
-									</h5>
-									<div class="mt-3">
+									 <div class="cardbtn">
+									 <div class="mt-3 text-center">
 										{% if mentor.github %}
 										<a href="https://github.com/{{ mentor.github }}"
 										   class="btn {{ mentor.color }} btn-icon-only rounded-circle"
@@ -345,6 +350,13 @@
 										</a>
 										{% endif %}
 									</div>
+									</div>
+								</div>
+								<div class="pt-4 text-center">
+									<h5 class="title">
+										<span class="d-block mb-1">{{ mentor.name }}</span>
+										<small class="h6 text-muted">{{ mentor.country }}</small>
+									</h5>									
 								</div>
 							</div>
 						</div>
@@ -409,17 +421,18 @@
 			</div>
 		  </footer>
 	</main>
+
 	<!-- Core -->
 	<script src="./assets/vendor/jquery/jquery.min.js"></script>
 	<script src="./assets/vendor/popper/popper.min.js"></script>
 	<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
 	<script src="./assets/vendor/headroom/headroom.min.js"></script>
 	<!-- Argon JS -->
-	<script src="./assets/js/argon.js?v=1.1.0"></script>
+	<script src="./assets/js/argon.min.js"></script>
 	<!-- Mustache -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
 	<!--External JS file-->
-	<script src="./assets/js/pages/index.js"></script>
+	<script src="./assets/js/pages/index.min.js"></script>
 	<!-- Template to render -->
 	<script type="text/html" id="contributors-template">
 		{% raw %}
