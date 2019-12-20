@@ -49,4 +49,10 @@
   name: Harshit Khandelwal
   country: India
   github: liveHarshit
-  color: btn-dark  
+  color: btn-dark 
+  
+- image: RohitPotter
+  name: Rohit Potter
+  country: India
+  github: rpotter12
+  color: btn-dark    
