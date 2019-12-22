@@ -1,0 +1,9 @@
+{
+  "name": "FOSSASIA GCI",
+  "short_name": "FOSSASIA GCI",
+  "theme_color": "#0099ff",
+  "background_color": "#0099ff",
+  "display": "standalone",
+
+  "start_url": "index.html"
+}

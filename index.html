@@ -29,9 +29,12 @@
 	<!--Custom CSS Rules-->
 	<link type="text/css" href="assets/css/custom.min.css" rel="stylesheet">
 
-</head>
+    <link rel="manifest" href="manifest.json">
 
-<body>
+    <meta name="theme-color" content="#0099ff" />
+    </head>
+    <body>
+
 		<a id="button"></a>
 	<header id="start" class="header-global">
 		<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
@@ -597,6 +600,24 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+</script>
+<script>
+
+    // ServiceWorker Registration
+    if('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('sw.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                
+            }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    
 
 </script>
 </body>
