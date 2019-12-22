@@ -105,6 +105,36 @@
 							</div>
 						</li>
 					</ul>
+					<ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link" data-toggle="dropdown" role="button">
+								<i class="ni ni-ui-04 d-lg-none"></i>
+								<span class="nav-link-inner--text">Menu</span>
+							</a>
+							<div class="dropdown-menu">
+								<div class="dark dropdown-menu-inner">
+									<a href="/#students" class="media d-flex align-items-center">
+										<h6 class="darker mb-md-1">Students</h6>
+									</a>
+									<a href="/#projects" class="media d-flex align-items-center">
+										<h6 class="darker mb-md-1">Student Projects</h6>
+									</a>
+									<a href="/#mentors" class="media d-flex align-items-center">
+										<h6 class="darker mb-md-1">Mentors</h6>
+									</a>
+									<a href="/#contributors" class="media d-flex align-items-center">
+										<h6 class="darker mb-md-1">Contributors</h6>
+									</a>
+									<a href="/#latest" class="media d-flex align-items-center">
+										<h6 class="darker mb-md-1">Latest Contributions</h6>
+									</a>
+									<a href="/#social" class="media d-flex align-items-center">
+										<h6 class="darker mb-md-1">FOSSASIA Social Media</h6>
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
 					<ul class="navbar-nav align-items-lg-center ml-lg-auto">
 						<li class="nav-item">
 							<a class="nav-link nav-link-icon" href="https://fossasia.org/" target="_blank" data-toggle="tooltip"
@@ -181,7 +211,7 @@
 				</div>
 			</section>
 			<section class="section section-lg">
-				<div class="container">
+				<div class="container" id="students">
 					<div class="row justify-content-center text-center mb-lg">
 						<div class="col-lg-8">
 							<h2 class="display-3">Students</h2>
@@ -232,7 +262,7 @@
 				</div>
 			</section>
 			    <section class="section section-lg bg-secondary">
-        <div class="container">
+        <div class="container" id="projects">
             <div class="row justify-content-center text-center mb-lg">
                 <div class="col-lg-8">
                     <h2 class="display-3">Student Projects</h2>
@@ -314,7 +344,7 @@
         </div>
     </section>
 			<section class="section section-lg">
-				<div class="container">
+				<div class="container" id="mentors">
 					<div class="row justify-content-center text-center mb-lg">
 						<div class="col-lg-8">
 							<h2 class="display-3">Mentors</h2>
@@ -386,6 +416,59 @@
 									</a>
 				</div>
 			</section>
+			<section class="section">
+				<div class="container" id="social">
+					<div class="row justify-content-center text-center mb-5">
+						<div class="col-lg-8">
+							<h2 class="display-3">FOSSASIA on Social Media</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="twitter-timeline"
+							   href="https://twitter.com/fossasia?ref_src=twsrc%5Etfw"
+							   data-height="600">
+								Tweets by fossasia
+							</a>
+						</div>
+						<div class="col-md-5 offset-md-1">
+							<div id="fb-root"></div>
+							<div class="fb-page mt-5"
+								 data-href="https://www.facebook.com/fossasia/?ref=br_rs"
+								 data-tabs="page plugin"
+								 data-width=""
+								 data-height=""
+								 data-small-header="false"
+								 data-adapt-container-width="true"
+								 data-hide-cover="false"
+								 data-show-facepile="true">
+								<blockquote cite="https://www.facebook.com/fossasia/?ref=br_rs"
+											class="fb-xfbml-parse-ignore">
+									<a href="https://www.facebook.com/fossasia/?ref=br_rs">
+										FOSSASIA
+									</a>
+								</blockquote>
+							</div>
+							<div>
+								<div class="fb-like mb-3 mt-3"
+									 data-href="https://www.facebook.com/fossasia/?ref=br_rs"
+									 data-width=""
+									 data-layout="standard"
+									 data-action="like"
+									 data-size="large"
+									 data-share="true">
+								</div>
+								<div>
+									<a href="https://twitter.com/fossasia?ref_src=twsrc%5Etfw"
+									   class="twitter-follow-button"
+									   data-show-count="false">Follow @fossasia
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 		<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
 			<div class="container text-center">
@@ -427,6 +510,10 @@
 	<script src="./assets/vendor/popper/popper.min.js"></script>
 	<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
 	<script src="./assets/vendor/headroom/headroom.min.js"></script>
+	<!--	twitter widgets	-->
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<!--	facebook widgets	-->
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
 	<!-- Argon JS -->
 	<script src="./assets/js/argon.min.js"></script>
 	<!-- Mustache -->
