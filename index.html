@@ -31,9 +31,12 @@
 	<!--JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/translate.js"></script>
-</head>
+	<link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0099ff" />
+    </head>
+    <body>
 
-<body>
+
 		<a id="button"></a>
 	<header id="start" class="header-global">
 		<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
@@ -598,6 +601,24 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+</script>
+<script>
+
+    // ServiceWorker Registration
+    if('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('sw.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                
+            }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    
 
 </script>
 </body>
