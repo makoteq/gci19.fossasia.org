@@ -28,10 +28,15 @@
 	<link type="text/css" href="./assets/css/argon.min.css" rel="stylesheet">
 	<!--Custom CSS Rules-->
 	<link type="text/css" href="assets/css/custom.min.css" rel="stylesheet">
+		<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/translate.js"></script>
+    <link rel="manifest" href="manifest.json">
 
-</head>
+    <meta name="theme-color" content="#0099ff" />
+    </head>
+    <body>
 
-<body>
 		<a id="button"></a>
 	<header id="start" class="header-global">
 		<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
@@ -64,7 +69,7 @@
 						<li class="nav-item dropdown">
 							<a href="#" class="nav-link" data-toggle="dropdown" role="button">
 								<i class="ni ni-ui-04 d-lg-none"></i>
-								<span class="nav-link-inner--text">Projects</span>
+								<span key="projects" class="lang nav-link-inner--text">Projects</span>
 							</a>
 							<div class="dropdown-menu dropdown-menu-xl">
 								<div class="dropdown-menu-inner">
@@ -105,6 +110,48 @@
 							</div>
 						</li>
 					</ul>
+					<ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link" data-toggle="dropdown" role="button">
+								<i class="ni ni-ui-04 d-lg-none"></i>
+								<span class="nav-link-inner--text">GCI</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-xl">
+								<div class="dropdown-menu-inner">
+									<a href="http://gci18.fossasia.org/" class="media d-flex align-items-center">
+										<div class="media-body ml-3">
+											<h6 class="heading text-primary mb-md-1">GCI 2018</h6>
+											<p class="description d-none d-md-inline-block mb-0">Google code-in 2018 competition</p>
+										</div>
+									</a>
+									<a href="https://gci17.fossasia.org/" class="media d-flex align-items-center">
+										<div class="media-body ml-3">
+											<h6 class="heading text-primary mb-md-1">GCI 2017</h6>
+											<p class="description d-none d-md-inline-block mb-0">Google code in 2017 competition</p>
+										</div>
+									</a>
+									<a href="https://gci16.fossasia.org/" class="media d-flex align-items-center">
+										<div class="media-body ml-3">
+											<h5 class="heading text-primary mb-md-1">GCI 2016</h5>
+											<p class="description d-none d-md-inline-block mb-0">Google code in 2016 competition</p>
+										</div>
+									</a>
+									<a href="https://gci15.fossasia.org/" class="media d-flex align-items-center">
+										<div class="media-body ml-3">
+											<h6 class="heading text-primary mb-md-1">GCI 2015</h6>
+											<p class="description d-none d-md-inline-block mb-0">Google code in 2015 competition</p>
+										</div>
+									</a>
+									<a href="https://gci14.fossasia.org/" class="media d-flex align-items-center">
+										<div class="media-body ml-3">
+											<h6 class="heading text-primary mb-md-1">GCI 2014</h6>
+											<p class="description d-none d-md-inline-block mb-0">Google code in 2014 competition</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
 					<ul class="navbar-nav align-items-lg-center ml-lg-auto">
 						<li class="nav-item">
 							<a class="nav-link nav-link-icon" href="https://fossasia.org/" target="_blank" data-toggle="tooltip"
@@ -136,6 +183,25 @@
 							</a>
 						</li>
 					</ul>
+					<div class="btn-group">
+						<button class="btn btn-neutral btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Languages
+						</button>
+						<div class="dropdown-menu">
+							<div id="en" style="cursor:pointer; border-bottom: solid 2px #333333;" class="media d-flex align-items-center translate">
+								<div class="media-body ml-3">
+									<h5 class="heading text-primary mb-md-1">English</h5>
+									<p class="description d-none d-md-inline-block mb-0">Change to English</p>
+								</div>
+							</div>
+							<div id="pl" style="cursor:pointer; border-bottom: solid 2px #333333;" class="media d-flex align-items-center translate">
+								<div class="media-body ml-3">
+									<h5 class="heading text-primary mb-md-1">Polish</h5>
+									<p class="description d-none d-md-inline-block mb-0">Change to Polish</p>
+								</div>
+							</div>
+						</div>
+					  </div>
 				</div>
 			</div>
 		</nav>
@@ -161,7 +227,7 @@
 						<div class="row align-items-center justify-content-center">
 							<div class="col-lg-6 text-center">
 								<img alt="image" src="assets/img/brand/logo.png" style="width: 200px;" class="img-fluid">
-								<p class="lead text-white">Bringing together an inspiring community across borders and ages to form a
+								<p key="fossasiaDes" class="lang lead text-white">Bringing together an inspiring community across borders and ages to form a
 									better future with Open Technologies and ICT</p>
 								<div class="btn-wrapper mt-5">
 									<a href="https://fossasia.org"
@@ -184,8 +250,8 @@
 				<div class="container">
 					<div class="row justify-content-center text-center mb-lg">
 						<div class="col-lg-8">
-							<h2 class="display-3">Students</h2>
-							<p class="lead text-muted">Students who take part in Google Code-in with FOSSASIA</p>
+							<h2 class="lang" key="students" class="display-3">Students</h2>
+							<p key="studentsDes"  class="lang lead text-muted">Students who take part in Google Code-in with FOSSASIA</p>
 						</div>
 					</div>
 					<div class="row justify-content-center">
@@ -235,7 +301,7 @@
         <div class="container">
             <div class="row justify-content-center text-center mb-lg">
                 <div class="col-lg-8">
-                    <h2 class="display-3">Student Projects</h2>
+                    <h2 class="lang" key="projects" class="display-3">Student Projects</h2>
                 </div>
             </div>
             <div class="row">
@@ -317,7 +383,7 @@
 				<div class="container">
 					<div class="row justify-content-center text-center mb-lg">
 						<div class="col-lg-8">
-							<h2 class="display-3">Mentors</h2>
+							<h2 key="mentors" class="lang display-3">Mentors</h2>
 							<p class="lead text-muted">Google Code-in 2019 FOSSASIA</p>
 						</div>
 					</div>
@@ -365,7 +431,7 @@
 				</div>
 			</section>
 			<section class="section section-primary">
-				<h2 class="display-3 text-center mb-5">Contributors
+				<h2 key="Contributors" class="lang display-3 text-center mb-5">Contributors
 					<p class="lead text-center">People who have made contributions to gci19.fossasia.org</p>
 				</h2>
 				<div class="container">
@@ -373,7 +439,7 @@
 				</div>
 			</section>
 			<section class="section section-primary">
-				<h2 class="display-3 text-center mb-5">Latest Contributions
+				<h2 key="latestContributions" class="lang display-3 text-center mb-5">Latest Contributions
 					<p class="lead text-center">Latest commits on our GitLab repository</p>
 				</h2>
 				<div class="container">
@@ -382,7 +448,7 @@
 					<a href="https://gitlab.com/fossasia/gci19-fossasia-org/merge_requests"
 										class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0 text-center">
 										<span class="btn-inner--icon"><i class="fa fa-eye"></i></span>
-										<span class="btn-inner--text">View More</span>
+										<span key="viewMore" class="lang btn-inner--text">View More</span>
 									</a>
 				</div>
 			</section>
@@ -390,7 +456,7 @@
 				<div class="container">
 					<div class="row justify-content-center text-center mb-5">
 						<div class="col-lg-8">
-							<h2 class="display-3">FOSSASIA on Social Media</h2>
+							<h2 class="lang" key="fossasiaOnSocialMedia" class="display-3">FOSSASIA on Social Media</h2>
 						</div>
 					</div>
 					<div class="row">
@@ -424,7 +490,7 @@
 			<div class="container text-center">
 			  <img src="./assets/img/logo-light.jpg" alt="fossasia icon" style="width:100px" class="rounded">
 			  
-			  <p class="footer_text font-weight-bold" style="color: rgb(152, 106, 196);">GCI2019 &copy; Theme created by <a href="https://www.creative-tim.com/product/argon-design-system">Creative Tim</a></p>
+			  <p class=" footer_text font-weight-bold"  style="color: rgb(152, 106, 196);"><b class="lang" key="footerText">GCI2019 &copy; Theme created by</b>  <a href="https://www.creative-tim.com/product/argon-design-system">Creative Tim</a></p>
 			  <div style="margin:0 auto;" class="w-75 text-center row container">
 			  <a class="icon_social col-sm nav-link nav-link-icon" href="https://www.facebook.com/fossasia/" target="_blank" data-toggle="tooltip" title="Check out our Facebook">
 				<i class="fa fa-facebook-square"></i>
@@ -449,6 +515,9 @@
 			  </a>
 			  <a class="icon_social col-sm nav-link nav-link-icon" href=https://www.linkedin.com/groups/3762811 target="_blank" data-toggle="tooltip" title="Check out our Linkedin">
 				<i class="fa fa-linkedin"></i>
+			  </a>
+			  <a class="icon_social col-sm nav-link nav-link-icon" href="https://gitlab.com/fossasia" target="_blank" data-toggle="tooltip" title="Check out our GitLab">
+				<i class="fa fa-gitlab"></i>
 			  </a>
 			</div>
 			</div>
@@ -532,6 +601,24 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+</script>
+<script>
+
+    // ServiceWorker Registration
+    if('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('sw.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                
+            }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    
 
 </script>
 </body>
