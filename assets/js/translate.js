@@ -1,5 +1,4 @@
 var arrLang = {
-  
     "en": {
         "students":"Students",
         "projects":"Projekty",
@@ -29,12 +28,33 @@ var arrLang = {
     }
     };
 
-    // Process translation
-    $(function() {
-      $('.translate').click(function() {
-        var lang = $(this).attr('id');
-        $('.lang').each(function(index, item) {
-          $(this).text(arrLang[lang][$(this).attr('key')]);
-        });
+    let list = ["en","pl"];
+    let listText = ["English","Polski"];
+    let lang = "en";
+     // Process translation
+    function changeLang(language) {
+      $('.lang').each(function(index, item) {
+        $(this).text(arrLang[language][$(this).attr('key')]);
       });
+      lang=language
+      pushLang();
+    };
+
+    function pushLang() {
+      let langList = ''
+      for (let i = 0; i < list.length; i++) {          
+        if (list[i] != lang) {       
+          langList += '<div  style="cursor:pointer;" class="media d-flex align-items-center" onclick=changeLang(\''+list[i]+'\')>\
+          <div class="media-body ml-3">\
+          <h5 class="heading text-primary mb-md-1">'+listText[i]+'</h5>\
+          <p class="description d-none d-md-inline-block mb-0">Change to '+listText[i]+'</p>\
+          </div>\
+          </div>'
+        }
+      }
+      $('#langDrop').html(langList);
+    }
+    $(document).ready(function(){
+      changeLang(lang);
     });
+    
