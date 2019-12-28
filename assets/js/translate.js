@@ -5,12 +5,12 @@ var arrLang = {
         "fossasiaOnSocialMedia":"FOSSASIA on Social Media",
         "footerText":"GCI2019 &copy; Theme created by",
         "viewMore":"Zobacz więcej",
-        "mentors":"Mentorzy",
+        "mentors":"Mentors",
         "studentsDes":"Students who take part in Google Code-in with FOSSASIA",
         "latestContributions":"Latest Contributions",
         "Contributors":"Contributors",
         "projects":"Projects",
-        "fossasiaDes":"Bringing together an inspiring community across borders and ages to form abetter future with Open Technologies and ICT",
+        "fossasiaDes":"Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT",
 
     },
     "pl": {
