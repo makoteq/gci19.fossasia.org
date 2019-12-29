@@ -128,8 +128,9 @@
   github: aryan-bansal
   color: btn-danger
 
-  image: datngohoang
+- image: datngohoang
   name: Ngo Hoang Dat
   country: Vietnam
   github: hoangdatngo
+  facebook: ngohoangdat2003
   color: btn-info
