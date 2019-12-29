@@ -114,3 +114,16 @@
   twitter: paramoham
   facebook: paramoham
   color: btn-dark
+
+- image: okjuszide
+  name: Maja Gołuszko
+  country: Poland
+  github: Okjuszide
+  facebook: Okjuszide
+  color: btn-danger
+  
+- image: AryanBansal
+  name: Aryan Bansal
+  country: India
+  github: aryan-bansal
+  color: btn-danger
