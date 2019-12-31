@@ -21,6 +21,13 @@
   # if black  --> btn-dark
   # if dark-blue --> btn-default
 
+- image: sensei-img
+  name: Amulya Gupta
+  country: India
+  github: sensei-amulya
+  facebook: amulya.gupta.716
+  color: btn-success
+
 - image: supun_tharinda
   name: Supun Tharinda
   country: Sri Lanka
