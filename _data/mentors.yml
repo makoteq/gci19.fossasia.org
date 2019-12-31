@@ -1,3 +1,10 @@
+- image: Shridhar Goel
+  name: Shridhar Goel
+  country: India
+  github: ShridharGoel
+  twitter: ShridharGoel
+  color: btn-dark
+
 - image: Shantnu Kumar
   name: Shantnu Kumar
   country: India
@@ -70,4 +77,4 @@
   country: India
   github: jogendra
   twitter: jogendrafx
-  color: btn-dark   
+  color: btn-dark
