@@ -70,6 +70,19 @@
   name: Dilshaad
   country: India
   github: Dilshaad21
+  color: btn-dark     
+
+- image: NikitBhandari
+  name: Nikit Bhandari
+  country: India
+  github: nikit19
+  color: btn-dark
+
+- image: PrateekJain
+  name: Prateek Jain
+  country: India
+  github: prateekj117
+  twitter: prateekj117
   color: btn-dark   
   
 - image: Jogendra_Kumar
@@ -77,4 +90,4 @@
   country: India
   github: jogendra
   twitter: jogendrafx
-  color: btn-dark
+  color: btn-dark   
