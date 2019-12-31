@@ -1,1 +1,73 @@
-_data/mentors.yml
+- image: Shantnu Kumar
+  name: Shantnu Kumar
+  country: India
+  github: dipu989
+  color: btn-dark
+
+- image: Mario Behling
+  name: Mario Behling
+  country: Germany
+  github: mariobehling
+  twitter: mariobehling
+  color: btn-dark
+
+- image: Hong Phuc Dang
+  name: Hong Phuc Dang
+  country: Singapore
+  github: hpdang
+  twitter: hpdang
+  facebook: hpdang
+  color: btn-dark
+
+- image: Kush Trivedi
+  name: Kush Trivedi
+  country: Indore
+  github: kushthedude
+  color: btn-dark
+
+- image: abishekvashok
+  name: Abishek V Ashok
+  country: India
+  github: abishekvashok
+  color: btn-dark
+  
+- image: AmartyaMondal
+  name: Amartya Mondal
+  country: India
+  facebook: atm1504
+  github: atm1504
+  twitter: AmartyaMondal7
+  color: btn-dark
+  
+- image: pranav
+  name: Pranav Kulshrestha
+  country: India
+  facebook: pranav.kulshrestha.73
+  github: pranav1698
+  twitter: PranavKulshres3
+  color: btn-dark 
+
+- image: harshitkhandelwal
+  name: Harshit Khandelwal
+  country: India
+  github: liveHarshit
+  color: btn-dark 
+  
+- image: RohitPotter
+  name: Rohit Potter
+  country: India
+  github: rpotter12
+  color: btn-dark
+
+- image: Dilshaad
+  name: Dilshaad
+  country: India
+  github: Dilshaad21
+  color: btn-dark   
+  
+- image: Jogendra_Kumar
+  name: Jogendra Kumar
+  country: India
+  github: jogendra
+  twitter: jogendrafx
+  color: btn-dark
