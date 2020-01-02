@@ -141,10 +141,17 @@
   github: SarthakA99
   twitter: SarthakA9
   color: btn-danger
-  
+
+- image: sid
+  name: Siddharth Sinha
+  country: India
+  github: sid911
+  color: btn-light
+
 - image: Jatin
   name: Jatin Rao
   country: India
   github: jatin2003
   twitter: jatinn_r
   color: btn-info
+
