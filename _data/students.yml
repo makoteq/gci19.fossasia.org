@@ -147,3 +147,16 @@
   country: Poland
   github: lukasz-zbrzeski
   color: btn-dark
+
+- image: sid
+  name: Siddharth Sinha
+  country: India
+  github: sid911
+  color: btn-light
+
+- image: Jatin
+  name: Jatin Rao
+  country: India
+  github: jatin2003
+  twitter: jatinn_r
+  color: btn-info
