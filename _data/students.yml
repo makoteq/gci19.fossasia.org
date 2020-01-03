@@ -1,4 +1,4 @@
-  # image: 
+﻿  # image: 
   # (Paste the image in assets/img/students [480*480px] and add the file name here.)
   # name: Your_Name
   # country: Your_Country
@@ -142,6 +142,12 @@
   twitter: SarthakA9
   color: btn-danger
 
+- image: lukasz-zbrzeski
+  name: Łukasz Zbrzeski
+  country: Poland
+  github: lukasz-zbrzeski
+  color: btn-dark
+
 - image: sid
   name: Siddharth Sinha
   country: India
@@ -154,4 +160,3 @@
   github: jatin2003
   twitter: jatinn_r
   color: btn-info
-
