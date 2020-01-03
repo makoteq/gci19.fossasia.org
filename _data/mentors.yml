@@ -83,4 +83,17 @@
   country: India
   github: jogendra
   twitter: jogendrafx
-  color: btn-dark   
+  color: btn-dark
+
+- image: ShubhamGupta
+  name: Shubham Gupta
+  country: India
+  github: fragm3
+  color: btn-dark
+
+- image: Uddeshya Singh
+  name: Uddeshya Singh
+  country: India
+  github: uds5501
+  color: btn-dark
+

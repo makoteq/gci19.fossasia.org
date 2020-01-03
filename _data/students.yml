@@ -1,4 +1,4 @@
-  # image: 
+﻿  # image: 
   # (Paste the image in assets/img/students [480*480px] and add the file name here.)
   # name: Your_Name
   # country: Your_Country
@@ -147,3 +147,30 @@
   country: India
   github: aakash85r
   color: btn-dark
+
+  
+- image: lukasz-zbrzeski
+  name: Łukasz Zbrzeski
+  country: Poland
+  github: lukasz-zbrzeski
+  color: btn-dark
+
+- image: sid
+  name: Siddharth Sinha
+  country: India
+  github: sid911
+  color: btn-light
+
+- image: Jatin
+  name: Jatin Rao
+  country: India
+  github: jatin2003
+  twitter: jatinn_r
+  color: btn-info
+
+- image: RahulM
+  name: Rahul Metre
+  country: India
+  github: RahulMetre03
+  twitter: rahulmetre2003
+  color: btn-info
