@@ -167,3 +167,9 @@
   github: RahulMetre03
   twitter: rahulmetre2003
   color: btn-info
+  
+  - image: Tom
+  name: Tom Davies
+  country: United Kingdom
+  github: tomd_04
+  color: btn-light
