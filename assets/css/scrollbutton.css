@@ -1,13 +1,13 @@
 #button {
   display: inline-block;
   background-color: blueviolet;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   text-align: center;
   border-radius: 4px;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 90px;
+  right: 20px;
   transition: background-color .3s, 
     opacity .5s, visibility .5s;
   opacity: 0;
