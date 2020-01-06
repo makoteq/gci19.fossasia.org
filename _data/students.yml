@@ -180,3 +180,10 @@
   country: United Kingdom
   github: tomd_04
   color: btn-light
+  
+- image: Oleg
+  name: Oleg Markov
+  country: Russia
+  github: lontrid
+  color: btn-info
+
