@@ -2,3 +2,18 @@
   title: Fossasia Summit Promotional Video
   img: saarthakvid.jpg
   author_name: Saarthak Chaturvedi
+  
+- url: https://www.youtube.com/watch?v=XvoHY3QCJtw
+  title: Labyrinth
+  img: verma-labyrinth.png
+  author_name: Yash Kumar Verma
+  
+- url: https://www.youtube.com/watch?v=yc_d5JJ--vQ
+  title: SUSI AI on Kubernetes
+  img: verma-susi-kubernetes.png
+  author_name: Yash Kumar Verma
+
+- url: https://www.youtube.com/watch?v=AKOHR6uLMlY
+  title: Open Event Webapp
+  img: verma-open-event-webapp.png
+  author_name: Yash Kumar Verma
