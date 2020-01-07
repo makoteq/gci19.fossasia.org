@@ -33,4 +33,9 @@
 .blog-card .card-header-image img{
     width: 100%;
 }
+.content:hover img {
+    opacity: 0.3;
+    margin-top: -20px;
+    -webkit-filter: blur(3px);
+}
 
