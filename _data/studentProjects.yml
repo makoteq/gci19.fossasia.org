@@ -1,0 +1,17 @@
+#link : paste the link to your project
+#image : (Paste the image in assets/img/project [320*200] and add the file name here) . format
+#title : Your Project Title
+#student : Your Name
+#description : A brief description about your project
+
+- link: https://gitlab.com/Sid911/o2
+  image: O2.png
+  title: O2 Di-atomics
+  student: Siddharth Sinha
+  description: O2 is a platform focused on creating transparency between the user and government working and infrastructure, not just from the side of the citizens but also the officials of government can tag and reply to the feedback provided by users.
+
+- link: https://github.com/MuhammadWasif/react-notepad
+  image: notes.png
+  title: Quick Note
+  student: Muhammad Wasif
+  description: Quick Note is a web app built with React. The app enables you to take notes easily. A user can create, read, edit and delete notes in a minute. It's a offline web app once added on Home Screen.
