@@ -180,6 +180,9 @@
 									<a href="{{ site.baseurl }}/#social" class="media d-flex align-items-center">
 										<h6 class="darker mb-md-1">FOSSASIA Social Media</h6>
 									</a>
+									<a href="#video" class="media d-flex">
+										<h6 class="darker mb-md-1">Student Videos</h6>
+									</a>
 								</div>
 							</div>
 						</li>
@@ -364,6 +367,8 @@
 					</div>
 				</div>
 			</section>
+		
+			    
 			<section>
 				<div class="position-relative">
 					<!-- shape Hero -->
@@ -430,7 +435,7 @@
 							<div class="blog-card">
 								<div class="card">
 									<div class="card-header-image">
-										<a href="#pablo">
+										<a href="https://wordpress.com/read/feeds/90788618/posts/2507378609" target="_blank">
 											<!--Add Your project image here-->
 											<img class="img img-fluid rounded shadow img-full img-raised"
 												src="assets/img/blogs/diving_into_open_source.png">
@@ -456,7 +461,7 @@
 							<div class="blog-card">
 								<div class="card">
 									<div class="card-header-image">
-										<a href="#pablo">
+										<a href="https://fossasia.home.blog/2019/12/16/my-contibution-in-open-source/" target="_blank">
 											<!--Add Your project image here-->
 											<img class="img img-fluid rounded shadow img-full img-raised"
 												src="assets/img/blogs/my_contribution_in_open_source.jpeg">
@@ -527,6 +532,36 @@
 					</div>
 				</div>
 			</section>
+			<section class="section section-lg bg-secondary">
+				<div class="container">
+					<div class="row justify-content-center text-center mb-lg">
+						<div class="col-lg-8">
+							<h2 class="display-3" id="video">Student Videos</h2>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+					{% for video in site.data.videos %}
+					<div class="col-md-3">
+						<a href="{{video.url}}" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<div class="content">
+										<img src="assets/img/videos/{{video.img}}" height="240" width="240">
+										<div class="title mb16">
+											<h5 class="uppercase mb0">
+												<div>{{video.title}}</div>
+											</h5>
+											<span>
+												<div>{{video.author_name}}</div>
+											</span>
+										</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					{% endfor %}
+					</div>
+				</div>
+			</section>	
 			<section class="section section-lg">
 				<div class="container" id="mentors">
 					<div class="row justify-content-center text-center mb-lg">
@@ -594,6 +629,7 @@
 				<div class="container">
 					<div id="latest">
 					</div>
+
 					<a href="https://gitlab.com/fossasia/gci19-fossasia-org/merge_requests"
 										class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0 text-center" target="_blank">
 										<span class="btn-inner--icon"><i class="fa fa-eye"></i></span>
