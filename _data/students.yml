@@ -186,4 +186,10 @@
   country: Russia
   github: lontrid
   color: btn-info
+  
+- image: ds3712
+  name: Devansh Singh
+  country: India
+  github: Devansh3712
+  color: btn-dark
 
