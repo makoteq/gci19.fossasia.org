@@ -632,7 +632,7 @@
 
 					<a href="https://gitlab.com/fossasia/gci19-fossasia-org/merge_requests"
 										class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0 text-center" target="_blank">
-										<span class="btn-inner--icon"><i class="fa fa-eye"></i></span>
+										<span class="btn-inner--icon"><i style="color:black; font-size:1.2em" class="fa fa-eye"></i></span>
 										<span key="viewMore" class="lang btn-inner--text">View More</span>
 									</a>
 				</div>
@@ -797,14 +797,17 @@
 		{% raw %}
 		<div class="row">
 			{{#latest}}
-			<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 p-sm" >
-				<div class="card shadow" style="height:100%">
+			<div class="col-md-12 mb-3">
+				<div class="card shadow">
 					<div class="card-body">
+						<table width=100% >
+						<td width=50% text-align =left>
 						<h5>{{title}}</h5>
-						<br>
 						<p>!{{iid}} · Opened by <a href={{author.web_url}}>{{author.name}}</a></p>
-						<br>
-						<p><a href={{web_url}}>View</a></p>
+						</td>
+						<td width=50% align=right> 
+						<p ><a href={{web_url}}>View</a></p></td>
+						</table>
 					</div>
 				</div>
 			</div>
