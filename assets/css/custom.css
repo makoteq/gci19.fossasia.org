@@ -36,7 +36,7 @@
 
 .content:hover img {
     margin-top: -10px;
-    -webkit-filter: blur(3px);
+    -webkit-filter: blur(1px);
 }
 .content {
     padding: 24px 0;
