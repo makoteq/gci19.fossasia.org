@@ -1,10 +1,10 @@
 var arrLang = {
     "en": {
         "students":"Students",
-        "projects":"Projekty",
+        "projects":"Projects",
         "fossasiaOnSocialMedia":"FOSSASIA on Social Media",
-        "footerText":"GCI2019 &copy; Theme created by",
-        "viewMore":"Zobacz więcej",
+        "footerText":"GCI2019 © Theme created by",
+        "viewMore":"View More",
         "mentors":"Mentors",
         "studentsDes":"Students who take part in Google Code-in with FOSSASIA",
         "latestContributions":"Latest Contributions",
@@ -17,7 +17,7 @@ var arrLang = {
         "students":"Studenci",
         "projects":"Projekty",
         "fossasiaOnSocialMedia":"Fossasia na mediach społecznościowych",
-        "footerText":"GCI2019 © Motyw stworzony przez ",
+        "footerText":"GCI2019 © Motyw stworzony przez",
         "viewMore":"Zobacz więcej",
         "mentors":"Mentorzy",
         "studentsDes":"Studenci którzy wzięli udział w Google Code-In razem z Fossasia",
@@ -25,11 +25,24 @@ var arrLang = {
         "Contributors":"Uczestnicy",
         "projects":"Projekty",
         "fossasiaDes":"Łączymy w jedność kreatywną społeczność ponad podziałami wiekowymi dla lepszej przyszłości otwartych technologi i ICT"
+    },
+        "id": {
+        "students":"Pelajar",
+        "projects":"Proyek",
+        "fossasiaOnSocialMedia":"Fossasia di media sosial",
+        "footerText":"Tema dibuat oleh © GCI2019",
+        "viewMore":"Selengkapnya",
+        "mentors":"Pembimbing",
+        "studentsDes":"Siswa yang ikut serta dalam Google Code-In bersama Fossasia",
+        "latestContributions":"Perubahan Terbaru",
+        "Contributors":"Kontributor",
+        "projects":"Proyek",
+        "fossasiaDes":"Menyatukan komunitas yang kreatif tanpa batas usia untuk membentuk masa depan yang lebih baik dengan Open Technologies dan ICT"
     }
     };
 
-    let list = ["en","pl"];
-    let listText = ["English","Polski"];
+    let list = ["en","pl","id"];
+    let listText = ["English","Polski","Indonesia"];
     let lang = "en";
      // Process translation
     function changeLang(language) {
