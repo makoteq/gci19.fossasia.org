@@ -506,6 +506,30 @@
 								</div>
 							</div>
 						</div>
+							<div class="col-md-4">
+							<div class="blog-card">
+								<div class="card">
+									<div class="card-header-image">
+										<a href="https://wordress162161388.wordpress.com/2019/12/18/my-first-experience-in-opensource/" target="_blank">
+											<!--Add Your project image here-->
+											<img class="img img-fluid rounded shadow img-full img-raised"
+												src="assets/img/blogs/My_first_experience_in_open_source.jpeg">
+										</a>
+									</div>
+								</div>
+								<div class="card-body">
+									<h4 class="heading">
+										<a href="https://wordress162161388.wordpress.com/2019/12/18/my-first-experience-in-opensource/" target="_blank">Blog -My first Experience in open source</a>
+									</h4>
+									<p><strong>Muhammad Suheer</strong></p>
+									<p class="card-description">
+									  Hi, i am Muhammad Suheer from Pakistan, participant of Google Codein 2019 (the best competition to enlighten the importance of open source community in students). I started coding 1 year ago due to my great engrossment in it. I am a full stack web developer.
+										<a href="https://wordress162161388.wordpress.com/2019/12/18/my-first-experience-in-opensource/" target="_blank"> Read More
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
 						<div class="col-md-4">
 							<div class="blog-card">
 								<div class="card">
@@ -796,17 +820,14 @@
 		{% raw %}
 		<div class="row">
 			{{#latest}}
-			<div class="col-md-12 mb-3">
-				<div class="card shadow">
+			<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 p-sm" >
+				<div class="card shadow" style="height:100%">
 					<div class="card-body">
-						<table width=100% >
-						<td width=50% text-align =left>
 						<h5>{{title}}</h5>
+						<br>
 						<p>!{{iid}} · Opened by <a href={{author.web_url}}>{{author.name}}</a></p>
-						</td>
-						<td width=50% align=right> 
-						<p ><a href={{web_url}}>View</a></p></td>
-						</table>
+						<br>
+						<p><a href={{web_url}}>View</a></p>
 					</div>
 				</div>
 			</div>
