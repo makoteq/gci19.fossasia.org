@@ -596,15 +596,44 @@
 									   data-show-count="false">Follow @fossasia
 									</a>
 						</div>
-						<div class="col-md-5 offset-md-1">
+							<div class="col-md-5 offset-md-1">
 							<p class="font-weight-bold" style="font-size:1.5em; border-bottom:1px solid #525f7f">Facebook</p>
 								 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=822631814741758" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 							</div>
 							
-							<div>
-								<div>
+							<div class="col-md-12 offset-md-0">
+								<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; padding-top: 25px; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+									<p class="font-weight-bold" style="font-size:1.5em; border-bottom:1px solid #525f7f">Youtube</p>
+										<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+										<script src="https://apis.google.com/js/platform.js"></script>
 									
-								</div>
+										<div class="g-ytsubscribe" data-channelid="UCQprMsG-raCIMlBudm20iLQ" data-layout="full" data-count="default"></div>
+										<div class="embed-container">
+										<iframe class="latestVideoEmbed" vnum='0' cid="UCQprMsG-raCIMlBudm20iLQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<br><br>
+										<div class="embed-container">
+										<iframe class="latestVideoEmbed" vnum='1' cid="UCQprMsG-raCIMlBudm20iLQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+									</div>
+									</div>
+										<script>
+										var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+										function loadVideo(iframe){
+											$.getJSON( reqURL + iframe.getAttribute('cid'),
+											  function(data) {
+												 var videoNumber = (iframe.getAttribute('vnum')?Number(iframe.getAttribute('vnum')):0);
+												console.log(videoNumber);
+												 var link = data.items[videoNumber].link;
+												 id = link.substr(link.indexOf("=") + 1);  
+												 iframe.setAttribute("src","https://youtube.com/embed/"+id + "?controls=0&autoplay=0");
+											  }
+										   );
+										}
+										var iframes = document.getElementsByClassName('latestVideoEmbed');
+										for (var i = 0, len = iframes.length; i < len; i++){
+											   loadVideo(iframes[i]);
+										}
+										</script>
 							</div>
 						</div>
 					</div>

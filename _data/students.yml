@@ -1,14 +1,14 @@
-﻿  # image: 
+﻿  # image:
   # (Paste the image in assets/img/students [480*480px] and add the file name here.)
   # name: Your_Name
   # country: Your_Country
   # github: Your_Github_Username
   # (Copy your username from your profile URL; https://github.com/{{ student.github }} )
-  # twitter: 
+  # twitter:
   # (Copy your username from your profile URL; https://twitter.com/{{ student.twitter }} )
-  # facebook: 
+  # facebook:
   # (Copy your username from your profile URL; https://www.facebook.com/{{ student.facebook }} )
-  # color: btn-warning 
+  # color: btn-warning
   # (Add one of your facourite colour from following.)
   # (If you can choose the colour matched to your photo)
   # if orange --> btn-warning
@@ -77,13 +77,13 @@
   github: mhmdbhsk
   facebook: mhmdbhsk
   color: btn-success
-  
+
 - image: maciejkotowski
   name: Maciej Kotowski
   country: Poland
   github: makoteq
   color: btn-danger
-  
+
 - image: NishithP
   name: Nishith P
   country: India
@@ -97,7 +97,7 @@
   country: India
   github: aryanguls
   facebook: Aryan Gulati
-  color: btn-success 
+  color: btn-success
 
 
 - image: noor
@@ -106,7 +106,7 @@
   github: NourBzour
   facebook: noor.bzour.370
   color: btn-dark
-  
+
 - image: param_thakkar
   name: Param Thakkar
   country: Canada
@@ -127,7 +127,7 @@
   country: India
   github: aryan-bansal
   color: btn-danger
-  
+
 - image: datngohoang
   name: Ngo Hoang Dat
   country: Vietnam
@@ -148,7 +148,7 @@
   github: aakash85r
   color: btn-dark
 
-  
+
 - image: lukasz-zbrzeski
   name: Łukasz Zbrzeski
   country: Poland
@@ -174,22 +174,33 @@
   github: RahulMetre03
   twitter: rahulmetre2003
   color: btn-info
-  
+
 - image: Tom
   name: Tom Davies
   country: United Kingdom
   github: tomd_04
   color: btn-light
   
+- image: adithyagenie
+  name: Adithya
+  country: India
+  github: adithyagenie
+  color: btn-warning
+
 - image: Oleg
   name: Oleg Markov
   country: Russia
   github: lontrid
   color: btn-info
-  
+
 - image: ds3712
   name: Devansh Singh
   country: India
   github: Devansh3712
   color: btn-dark
 
+- image: Ashwanth_Kumar
+  name: Ashwanth Kumar
+  country: India
+  github: Ashwanth0018
+  color: btn-success
