@@ -542,21 +542,20 @@
 					<div class="row justify-content-center">
 					{% for video in site.data.videos %}
 					<div class="col-md-3">
-						<a href="{{video.url}}" target="_blank">
-							<div class="image-tile outer-title text-center">
-								<div class="content">
-										<img src="assets/img/videos/{{video.img}}" height="240" width="240">
-										<div class="title mb16">
-											<h5 class="uppercase mb0">
+								<div class="card text-center" style="width: 18rem;">
+									<div class="card-body">
+										<img class="card-img-top" src="assets/img/videos/{{video.img}}">
+
+											<h5 class="card-title">
 												<div>{{video.title}}</div>
 											</h5>
-											<span>
-												<div>{{video.author_name}}</div>
-											</span>
-										</div>
+											<p class="card-text">
+												{{video.author_name}}
+										</p>
+										<a href="{{video.url}}" target="_blank"class="btn btn-primary">Show</a>
+										
 								</div>
 							</div>
-						</a>
 					</div>
 					{% endfor %}
 					</div>
