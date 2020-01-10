@@ -2,23 +2,28 @@
   title: BLOG - DIVING INTO THE WORLD OF OPEN SOURCE
   img: diving_into_open_source.png
   url: https://wordpress.com/read/feeds/90788618/posts/2507378609
+  description: Hey there, before saying anything, let me introduce myself. I’m Muhammad Wasif, a 17 years old student from Pakistan. I started coding about two years ago. I taught myself front end web development with React.
 
 - author: Chamod perera
   title: BLOG - MY CONTRIBUTION IN OPEN SOURCE
   img: my_contribution_in_open_source.jpeg
   url: https://fossasia.home.blog/2019/12/16/my-contibution-in-open-source/
+  description: Hey there I 'm Chamod perera from Sri Lanka.I'm a pacticipant of this years' Google code-in.So today I'm going to introduce Google code-in and share my experience in open source.,
 
 - author: Nour Bzour
   title: MY OPEN SOURCE WORLD GCI
   img: nour.png
   url: https://gciwithnoor.home.blog/
+  description: Hi there , I am Noor Bzour 🙂 I am a passionate and creative web developer.. ! i am also a competitive programmer..! i love to solve problems..! you can also check my codeforces profile here..!
 
 - author: Muhammad Suheer
   title: BLOG -MY FIRST EXPERIENCE IN OPEN SOURCE
   img: My_first_experience_in_open_source.jpeg 
   url: https://wordress162161388.wordpress.com/2019/12/18/my-first-experience-in-opensource/
-
+  description: Hi, i am Muhammad Suheer from Pakistan, participant of Google Codein 2019 (the best competition to enlighten the importance of open source community in students). I started coding 1 year ago due to my great engrossment in it. I am a full stack web developer.
+  
 - author: Aryan Gulati
   title: MY OPEN SOURCE JOURNEY
   img:  AryanGulatiOpenSource.png
   url: https://aryanguls.wordpress.com/2020/01/04/google-code-in-my-open-source-journey/
+  description: Hey guys, my name is Aryan Gulati. I am 16 and live in India. I am sharing my experiences as I enter this world of open sorce developing. Hope you enjoy it!
