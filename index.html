@@ -431,130 +431,33 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4">
-							<div class="blog-card">
-								<div class="card">
-									<div class="card-header-image">
-										<a href="https://wordpress.com/read/feeds/90788618/posts/2507378609" target="_blank">
-											<!--Add Your project image here-->
-											<img class="img img-fluid rounded shadow img-full img-raised"
-												src="assets/img/blogs/diving_into_open_source.png">
-										</a>
-									</div>
-								</div>
-								<div class="card-body">
-									<h4 class="heading">
-										<a href="https://wordpress.com/read/feeds/90788618/posts/2507378609" target="_blank">Blog - Diving into the World of Open Source</a>
-									</h4>
-									<p><strong>Muhammad Wasif</strong></p>
-									<p class="card-description">
-										Hey there, before saying anything, let me introduce myself. I’m Muhammad Wasif,
-										a 17 years old student from Pakistan. I started coding about two years ago. I
-										taught myself front end web development with React.
-										<a href="https://wordpress.com/read/feeds/90788618/posts/2507378609" target="_blank"> Read More
-										</a>
-									</p>
+					{% for blog in site.data.blogs %}
+					<div class="col-md-4">
+						<div class="blog-card">
+							<div class="card">
+								<div class="card-header-image">
+									<a href="{{blog.url}}" target="_blank">
+										<img class="img img-fluid rounded shadow img-full img-raised" src="assets/img/blogs/{{blog.img}}">
+									</a>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="blog-card">
-								<div class="card">
-									<div class="card-header-image">
-										<a href="https://fossasia.home.blog/2019/12/16/my-contibution-in-open-source/" target="_blank">
-											<!--Add Your project image here-->
-											<img class="img img-fluid rounded shadow img-full img-raised"
-												src="assets/img/blogs/my_contribution_in_open_source.jpeg">
-										</a>
-									</div>
-								</div>
-								<div class="card-body">
-									<h4 class="heading">
-										<a href="https://fossasia.home.blog/2019/12/16/my-contibution-in-open-source/" target="_blank">Blog - My Contribution in Open Source</a>
-									</h4>
-									<p><strong>Chamod perera</strong></p>
-									<p class="card-description">
-										Hey there I 'm Chamod perera from Sri Lanka.I'm a pacticipant of this years'
-										Google code-in.So today I'm going to introduce Google code-in and share my
-										experience in open source.,
-										<a href="https://fossasia.home.blog/2019/12/16/my-contibution-in-open-source/" target="_blank">
-											Read More </a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="blog-card">
-								<div class="card">
-									<div class="card-header-image">
-										<a href="#pablo">
-											<!--Add Your project image here-->
-											<img class="img img-fluid rounded shadow img-full img-raised"
-												src="assets/img/blogs/nour.png">
-										</a>
-									</div>
-								</div>
-								<div class="card-body">
-									<h4 class="heading">
-										<a href="https://gciwithnoor.home.blog/" target="_blank">My Open source World GCI</a>
-									</h4>
-									<p><strong>Nour Bzour</strong></p>
-									<p class="card-description">
-									Hi there , I am Noor Bzour  🙂  I am a passionate and creative web developer.. ! i am also a competitive programmer..! i love to solve problems..! you can also check my codeforces profile here..!
-										<a href="https://gciwithnoor.home.blog/" target="_blank"> Read More </a>
-									</p>
-								</div>
-							</div>
-						</div>
-							<div class="col-md-4">
-							<div class="blog-card">
-								<div class="card">
-									<div class="card-header-image">
-										<a href="https://wordress162161388.wordpress.com/2019/12/18/my-first-experience-in-opensource/" target="_blank">
-											<!--Add Your project image here-->
-											<img class="img img-fluid rounded shadow img-full img-raised"
-												src="assets/img/blogs/My_first_experience_in_open_source.jpeg">
-										</a>
-									</div>
-								</div>
-								<div class="card-body">
-									<h4 class="heading">
-										<a href="https://wordress162161388.wordpress.com/2019/12/18/my-first-experience-in-opensource/" target="_blank">Blog -My first Experience in open source</a>
-									</h4>
-									<p><strong>Muhammad Suheer</strong></p>
-									<p class="card-description">
-									  Hi, i am Muhammad Suheer from Pakistan, participant of Google Codein 2019 (the best competition to enlighten the importance of open source community in students). I started coding 1 year ago due to my great engrossment in it. I am a full stack web developer.
-										<a href="https://wordress162161388.wordpress.com/2019/12/18/my-first-experience-in-opensource/" target="_blank"> Read More
-										</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="blog-card">
-								<div class="card">
-									<div class="card-header-image">
-										<a href="#pablo">
-											<!--Add Your project image here-->
-											<img class="img img-fluid rounded shadow img-full img-raised"
-												src="assets/img/blogs/AryanGulatiOpenSource.png">
-										</a>
-									</div>
-								</div>
-								<div class="card-body">
-									<h4 class="heading">
-										<a href="#pablo">My Open Source Journey</a>
-									</h4>
-									<p><strong>Aryan Gulati</strong></p>
-									<p class="card-description">
-									Hey guys, my name is Aryan Gulati. I am 16 and live in India. I am sharing my experiences as I enter this world of open sorce developing. Hope you enjoy it!
-										<a href="https://aryanguls.wordpress.com/2020/01/04/google-code-in-my-open-source-journey/"> Read More </a>
-									</p>
-								</div>
+							<div class="card-body">
+								<h4 class="heading">
+									<a href="{{blog.url}}" target="_blank">{{blog.title}}</a>
+								</h4>
+								<p><strong>{{blog.author}}</strong></p>
+								<p class="card-description">
+									{{blog.description}}
+									<a href="{{blog.url}}" target="_blank"> Read More </a>
+								</p>
 							</div>
 						</div>
 					</div>
+					{% endfor %}
+					</div>
 				</div>
+			</section>
+
 			</section>
 			<section class="section section-lg bg-secondary">
 				<div class="container">
@@ -566,6 +469,7 @@
 					<div class="row justify-content-center">
 					{% for video in site.data.videos %}
 					<div class="col-md-3">
+
 								<div class="card text-center" style="width: 18rem;">
 									<div class="card-body">
 										<img class="card-img-top" src="assets/img/videos/{{video.img}}">
