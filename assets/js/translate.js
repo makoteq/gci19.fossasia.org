@@ -11,7 +11,12 @@ var arrLang = {
         "Contributors":"Contributors",
         "projects":"Projects",
         "fossasiaDes":"Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT",
-
+        "fossasiaAlbum":"FOSSASIA Album",
+        "fossasiaAlbumDesc":"Take a look at FOSSASIA's fascinating image gallery!",
+        "visitGallery":"Visit Gallery",
+        "studentBlogs":"Student Blogs",
+        "studentProjects":"Student Projects 🎓",
+        "studentExplore":"Explore the projects built by our students 💕"
     },
     "pl": {
         "students":"Studenci",
@@ -24,25 +29,37 @@ var arrLang = {
         "latestContributions":"Ostatnie zmiany",
         "Contributors":"Uczestnicy",
         "projects":"Projekty",
-        "fossasiaDes":"Łączymy w jedność kreatywną społeczność ponad podziałami wiekowymi dla lepszej przyszłości otwartych technologi i ICT"
+        "fossasiaDes":"Łączymy w jedność kreatywną społeczność ponad podziałami wiekowymi dla lepszej przyszłości otwartych technologi i ICT",
+        "fossasiaAlbum":"FOSSASIA Album (not translated)",
+        "fossasiaAlbumDesc":"Take a look at FOSSASIA's fascinating image gallery! (not translated)",
+        "visitGallery":"Visit Gallery (not translated)",
+        "studentBlogs":"Student Blogs (not translated)",
+        "studentProjects":"Student Projects 🎓 (not translated)",
+        "studentExplore":"Explore the projects built by our students 💕 (not translated)"
     },
-        "id": {
-        "students":"Pelajar",
-        "projects":"Proyek",
-        "fossasiaOnSocialMedia":"Fossasia di media sosial",
-        "footerText":"Tema dibuat oleh © GCI2019",
-        "viewMore":"Selengkapnya",
-        "mentors":"Pembimbing",
-        "studentsDes":"Siswa yang ikut serta dalam Google Code-In bersama Fossasia",
-        "latestContributions":"Perubahan Terbaru",
-        "Contributors":"Kontributor",
-        "projects":"Proyek",
-        "fossasiaDes":"Menyatukan komunitas yang kreatif tanpa batas usia untuk membentuk masa depan yang lebih baik dengan Open Technologies dan ICT"
+    "ind": {
+      "students":"Siswa",
+      "projects":"Projek",
+      "fossasiaOnSocialMedia":"FOSSASIA di Sosial Media",
+      "footerText":"GCI2019 &copy; Tema dibuat oleh",
+      "viewMore":"Lihat Selengkapnya",
+      "mentors":"Mentor",
+      "studentsDes":"Siswa yang mengambil bagian dalam Google Code-in dengan FOSSASIA",
+      "latestContributions":"Kontribusi Terbaru",
+      "Contributors":"Kontributor",
+      "projects":"Projek",
+      "fossasiaDes":"Menyatukan komunitas yang menginspirasi lintas batas dan usia untuk membentuk masa depan yang lebih baik dengan Teknologi Terbuka dan TIK",
+      "fossasiaAlbum":"Album FOSSASIA",
+      "fossasiaAlbumDesc":"Mari lihat foto-foto menarik di FOSSASIA gallery",
+      "visitGallery":"Kunjungi Galeri",
+      "studentBlogs":"Blog Siswa",
+      "studentProjects":"Projek Siswa 🎓",
+      "studentExplore":"Jelajahi beberapa projek yang dibuat oleh siswa kami 💕"
     }
     };
 
-    let list = ["en","pl","id"];
-    let listText = ["English","Polski","Indonesia"];
+    let list = ["en","ind","pl"];
+    let listText = ["English","Indonesia","Polski"];
     let lang = "en";
      // Process translation
     function changeLang(language) {
