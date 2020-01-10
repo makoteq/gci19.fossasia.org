@@ -1,4 +1,4 @@
-﻿  # image:
+  # image:
   # (Paste the image in assets/img/students [480*480px] and add the file name here.)
   # name: Your_Name
   # country: Your_Country
@@ -99,7 +99,6 @@
   facebook: Aryan Gulati
   color: btn-success
 
-
 - image: noor
   name: Nour Bzour
   country: Jordan
@@ -147,7 +146,6 @@
   country: India
   github: aakash85r
   color: btn-dark
-
 
 - image: lukasz-zbrzeski
   name: Łukasz Zbrzeski
@@ -198,9 +196,23 @@
   country: India
   github: Devansh3712
   color: btn-dark
+ 
+- image: muhammadsuheer 
+  name: Muhammad Suheer
+  country: Pakistan 
+  github: muhammadsuheer 
+  twitter: Muhammad_Suheer 
+  facebook: suheer.mubashir 
+  color: btn-primar
 
 - image: Ashwanth_Kumar
   name: Ashwanth Kumar
   country: India
   github: Ashwanth0018
+  color: btn-success
+
+- image: Ramalokesh
+  name: K.G Ramalokeshwar Reddy
+  country: India
+  github: ramalokesh8477
   color: btn-success

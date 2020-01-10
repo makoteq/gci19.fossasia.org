@@ -275,9 +275,9 @@
       <div class="container py-md">
         <div class="row justify-content-between align-items-center">
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <h1 class="font-weight-bold">FOSSASIA's Album</h1>
-            <p class="lead mt-4">Take a look at FOSSASIA's fascinating image gallery!</p>
-            <a href="https://www.flickr.com/photos/fossasia/" class="btn btn-primary mt-4" target="_blank">Visit Gallery</a>
+            <h1 key="fossasiaAlbum" class="lang font-weight-bold">FOSSASIA's Album</h1>
+            <p key="fossasiaAlbumDesc" class="lang lead mt-4">Take a look at FOSSASIA's fascinating image gallery!</p>
+            <a href="https://www.flickr.com/photos/fossasia/" key="visitGallery" class="lang btn btn-primary mt-4">Visit Gallery</a>
           </div>
           <div class="col-lg-6 mb-lg-auto">
             <div class="rounded shadow-lg overflow-hidden transform-perspective-right">
@@ -382,8 +382,8 @@
 										<img alt="image" src="assets/img/brand/project.png" class="img-fluid">
 									</div>
 									<div class="col-lg-6" style="padding-top: 10%;">
-										<h1 class="display-3  text-white">Student Projects 🎓</h1>
-										<p class="lead text-white">Explore the projects built by our students 💕</p>
+										<h1 key="studentProjects" class="lang display-3  text-white">Student Projects 🎓</h1>
+										<p key="studentExplore" class="lang lead text-white">Explore the projects built by our students 💕</p>
 									</div>
 								</div>
 							</div>
@@ -427,7 +427,7 @@
 				<div class="container">
 					<div class="row justify-content-center text-center mb-lg">
 						<div class="col-lg-8">
-							<h2 class="display-3">Student Blogs</h2>
+							<h2 key="studentBlogs" class="lang display-3">Student Blogs</h2>
 						</div>
 					</div>
 					<div class="row">
@@ -506,6 +506,30 @@
 								</div>
 							</div>
 						</div>
+							<div class="col-md-4">
+							<div class="blog-card">
+								<div class="card">
+									<div class="card-header-image">
+										<a href="https://wordress162161388.wordpress.com/2019/12/18/my-first-experience-in-opensource/" target="_blank">
+											<!--Add Your project image here-->
+											<img class="img img-fluid rounded shadow img-full img-raised"
+												src="assets/img/blogs/My_first_experience_in_open_source.jpeg">
+										</a>
+									</div>
+								</div>
+								<div class="card-body">
+									<h4 class="heading">
+										<a href="https://wordress162161388.wordpress.com/2019/12/18/my-first-experience-in-opensource/" target="_blank">Blog -My first Experience in open source</a>
+									</h4>
+									<p><strong>Muhammad Suheer</strong></p>
+									<p class="card-description">
+									  Hi, i am Muhammad Suheer from Pakistan, participant of Google Codein 2019 (the best competition to enlighten the importance of open source community in students). I started coding 1 year ago due to my great engrossment in it. I am a full stack web developer.
+										<a href="https://wordress162161388.wordpress.com/2019/12/18/my-first-experience-in-opensource/" target="_blank"> Read More
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
 						<div class="col-md-4">
 							<div class="blog-card">
 								<div class="card">
@@ -542,21 +566,21 @@
 					<div class="row justify-content-center">
 					{% for video in site.data.videos %}
 					<div class="col-md-3">
-						<a href="{{video.url}}" target="_blank">
-							<div class="image-tile outer-title text-center">
-								<div class="content">
-										<img src="assets/img/videos/{{video.img}}" height="240" width="240">
-										<div class="title mb16">
-											<h5 class="uppercase mb0">
+
+								<div class="card text-center" style="width: 18rem;">
+									<div class="card-body">
+										<img class="card-img-top" src="assets/img/videos/{{video.img}}">
+
+											<h5 class="card-title">
 												<div>{{video.title}}</div>
 											</h5>
-											<span>
-												<div>{{video.author_name}}</div>
-											</span>
-										</div>
+											<p class="card-text">
+												{{video.author_name}}
+										</p>
+										<a href="{{video.url}}" target="_blank"class="btn btn-primary">Show</a>
+										
 								</div>
 							</div>
-						</a>
 					</div>
 					{% endfor %}
 					</div>
@@ -632,7 +656,7 @@
 
 					<a href="https://gitlab.com/fossasia/gci19-fossasia-org/merge_requests"
 										class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0 text-center" target="_blank">
-										<span class="btn-inner--icon"><i class="fa fa-eye"></i></span>
+										<span class="btn-inner--icon"><i style="color:black; font-size:1.2em" class="fa fa-eye"></i></span>
 										<span key="viewMore" class="lang btn-inner--text">View More</span>
 									</a>
 				</div>
@@ -797,17 +821,14 @@
 		{% raw %}
 		<div class="row">
 			{{#latest}}
-			<div class="col-md-12 mb-3">
-				<div class="card shadow">
+			<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 p-sm" >
+				<div class="card shadow" style="height:100%">
 					<div class="card-body">
-						<table width=100% >
-						<td width=50% text-align =left>
 						<h5>{{title}}</h5>
+						<br>
 						<p>!{{iid}} · Opened by <a href={{author.web_url}}>{{author.name}}</a></p>
-						</td>
-						<td width=50% align=right> 
-						<p ><a href={{web_url}}>View</a></p></td>
-						</table>
+						<br>
+						<p><a href={{web_url}}>View</a></p>
 					</div>
 				</div>
 			</div>
