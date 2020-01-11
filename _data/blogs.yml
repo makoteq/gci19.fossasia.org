@@ -1,0 +1,47 @@
+- author: Muhammad Wasif
+  title: BLOG - DIVING INTO THE WORLD OF OPEN SOURCE
+  img: diving_into_open_source.png
+  url: https://wordpress.com/read/feeds/90788618/posts/2507378609
+  description: Hey there, before saying anything, let me introduce myself. I’m Muhammad Wasif, a 17 years old student from Pakistan. I started coding about two years ago. I taught myself front end web development with React.
+
+- author: Chamod perera
+  title: BLOG - MY CONTRIBUTION IN OPEN SOURCE
+  img: my_contribution_in_open_source.jpeg
+  url: https://fossasia.home.blog/2019/12/16/my-contibution-in-open-source/
+  description: Hey there I 'm Chamod perera from Sri Lanka.I'm a pacticipant of this years' Google code-in.So today I'm going to introduce Google code-in and share my experience in open source.,
+
+- author: Nour Bzour
+  title: MY OPEN SOURCE WORLD GCI
+  img: nour.png
+  url: https://gciwithnoor.home.blog/
+  description: Hi there , I am Noor Bzour 🙂 I am a passionate and creative web developer.. ! i am also a competitive programmer..! i love to solve problems..! you can also check my codeforces profile here..!
+
+- author: Muhammad Suheer
+  title: BLOG -MY FIRST EXPERIENCE IN OPEN SOURCE
+  img: My_first_experience_in_open_source.jpeg 
+  url: https://wordress162161388.wordpress.com/2019/12/18/my-first-experience-in-opensource/
+  description: Hi, i am Muhammad Suheer from Pakistan, participant of Google Codein 2019 (the best competition to enlighten the importance of open source community in students). I started coding 1 year ago due to my great engrossment in it. I am a full stack web developer.
+  
+- author: Aryan Gulati
+  title: MY OPEN SOURCE JOURNEY
+  img:  AryanGulatiOpenSource.png
+  url: https://aryanguls.wordpress.com/2020/01/04/google-code-in-my-open-source-journey/
+  description: Hey guys, my name is Aryan Gulati. I am 16 and live in India. I am sharing my experiences as I enter this world of open sorce developing. Hope you enjoy it!
+  
+- author: Oleg Markov
+  title: My experience with Google Code-In
+  img: My_experience_with_Google_Code-In.jpeg
+  url: https://lontrid.home.blog/2020/01/10/my-experience-with-google-code-in/
+  description: Hello everyone! First please let me introduce myself. I’m Oleg Markov, a 16-year-old student from Russia. I started programming about six years ago. I’m studying web development, mobile applications development, and recently have initiated deep learning studies.
+  
+- author: Ashwanth Kumar
+  title: My Experience in GCI
+  img: FOSSASIA.jpeg
+  url: https://ashwanth7230gci.wordpress.com/2020/01/11/my-experience-in-gci/
+  description: Hello everyone,my name is B.Ashwanth Kumar and I am of 15 years old.My hobbies are to code,play games and also to contribute organisations like fossasia.
+
+- author: Kumuditha Karunarathna
+  title: Interview with a Teacher
+  img: Interview-with-a-teacher.jpeg
+  url: https://kumuditha.design.blog/2020/01/10/interview/
+  description: "Me: What’s your name and where are you from? Teacher: Palika Samarawickrama, From Katugasthota Sri Lanka. Me: Which Institution are you working? Teacher: St. Anthony’s College Kandy."

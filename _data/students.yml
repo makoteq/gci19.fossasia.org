@@ -178,7 +178,7 @@
   country: United Kingdom
   github: tomd_04
   color: btn-light
-  
+
 - image: adithyagenie
   name: Adithya
   country: India
@@ -195,18 +195,24 @@
   name: Devansh Singh
   country: India
   github: Devansh3712
+
   color: btn-dark
- 
-- image: muhammadsuheer 
+- image: muhammadsuheer
   name: Muhammad Suheer
-  country: Pakistan 
-  github: muhammadsuheer 
-  twitter: Muhammad_Suheer 
-  facebook: suheer.mubashir 
+  country: Pakistan
+  github: muhammadsuheer
+  twitter: Muhammad_Suheer
+  facebook: suheer.mubashir
   color: btn-primar
 
 - image: Ashwanth_Kumar
   name: Ashwanth Kumar
   country: India
   github: Ashwanth0018
+  color: btn-success
+
+- image: Ramalokesh
+  name: K.G Ramalokeshwar Reddy
+  country: India
+  github: ramalokesh8477
   color: btn-success
